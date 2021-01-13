@@ -7,11 +7,12 @@ import {
 
 const Photo = () => {
     const apiKey = 'aBHCRL4VEsVTo2tFwFo-5xiOS75n-RDSK9vJMgWX714';
+    const apiKey2 = 'oGhW-led2iTvxCpr7uMOpOAo7HPoz6J48wNf2pSetgU';
     const [photo, setPhoto] = useState('');
     const window = Dimensions.get('window');
 
     const getPhoto = () => {
-        fetch(`https://api.unsplash.com/photos/random?client_id=${apiKey}`)
+        fetch(`https://api.unsplash.com/photos/random?client_id=${apiKey2}`)
         .then((response) => response.json())
         .then((json) => {
             const url = json.urls.full;
