@@ -6,7 +6,8 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "tvos": "react-native run-ios  --simulator 'Apple TV' --scheme 'UnsplashTV-tvOS'",
+    "tvos-sim": "react-native run-ios  --simulator 'Apple TV' --scheme 'UnsplashTV-tvOS'",
+    "tvos-dev": "react-native run-ios  --device 'Home Apple TV' --scheme 'UnsplashTV-tvOS'",
     "test": "jest",
     "lint": "eslint ."
   },

@@ -12,7 +12,7 @@ const Photo = () => {
     const window = Dimensions.get('window');
 
     const getPhoto = () => {
-        fetch(`https://api.unsplash.com/photos/random?client_id=${apiKey2}`)
+        fetch(`https://api.unsplash.com/photos/random?client_id=${apiKey}`)
         .then((response) => response.json())
         .then((json) => {
             const url = json.urls.full;
